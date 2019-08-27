@@ -3,4 +3,8 @@
   </agm-direction>
 </agm-map>
 
+<div class="container">
+  <button (click)="printRoute(route)" *ngFor="let route of routes; index as i;" class="btn btn-primary" type="button">
+    Favorito {{i}}</button>
+</div>
 
