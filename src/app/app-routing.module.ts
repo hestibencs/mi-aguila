@@ -1,11 +1,23 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {RequireEagleComponent} from './require-eagle/require-eagle.component';
+import {DirectionCenterComponent} from './direction-center/direction-center.component';
+import {DirectionComponent} from './direction/direction.component';
 
 
 const routes: Routes = [
-  {path: '', component: RequireEagleComponent},
-  {path: 'route/:route', component: RequireEagleComponent}
+  {
+    path: '',
+    redirectTo: 'direction',
+    pathMatch: 'full'
+  },
+  {
+    path: 'direction',
+    component: DirectionCenterComponent
+  },
+  {
+    path: 'direction/:origin/:destination',
+    component: DirectionComponent
+  }
 ];
 
 @NgModule({
