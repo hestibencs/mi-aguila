@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<div class="my-eagle-container">
+  <div class="sidebar">
+    <div class="brand">
+      <img alt="logo-brand" src="../assets/imgs/ic_logo-01.svg">
+    </div>
+    <div class="profile">
+      <div class="avatar">
+        <img alt="avatar" src="../assets/imgs/1455555016_users-15_icon-icons.com_53267.svg">
+      </div>
+      <div class="title">Jorge Solano</div>
+      <div class="description">Beneficiario</div>
+    </div>
+    <div class="separator"></div>
+    <div class="nav">
+      <div *ngFor="let item of menu; let i = index;" [ngClass]="{'active': i === 0}"
+           class="nav-item">
+        <img alt="icon" src="../assets/imgs/favicon.png">
+        <span>{{item}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

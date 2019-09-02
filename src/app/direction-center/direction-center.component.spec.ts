@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RequireEagleComponent } from './require-eagle.component';
+import { DirectionCenterComponent } from './direction-center.component';
 
-describe('RequireEagleComponent', () => {
-  let component: RequireEagleComponent;
-  let fixture: ComponentFixture<RequireEagleComponent>;
+describe('DirectionCenterComponent', () => {
+  let component: DirectionCenterComponent;
+  let fixture: ComponentFixture<DirectionCenterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RequireEagleComponent ]
+      declarations: [ DirectionCenterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RequireEagleComponent);
+    fixture = TestBed.createComponent(DirectionCenterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

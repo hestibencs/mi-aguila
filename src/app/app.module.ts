@@ -1,17 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { RequireEagleComponent } from './require-eagle/require-eagle.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {AgmCoreModule} from '@agm/core';
 import {AgmDirectionModule} from 'agm-direction';
 import {HttpClientModule} from '@angular/common/http';
+import {DirectionCenterComponent} from './direction-center/direction-center.component';
+import {DirectionComponent} from './direction/direction.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    RequireEagleComponent
+    DirectionCenterComponent,
+    DirectionComponent
   ],
   imports: [
     BrowserModule,
@@ -20,9 +23,11 @@ import {HttpClientModule} from '@angular/common/http';
       apiKey: 'AIzaSyCFWm9t-nLARH92q1iPeGi2q7_GZIU0mY4'
     }),
     AgmDirectionModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

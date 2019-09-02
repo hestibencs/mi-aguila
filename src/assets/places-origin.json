@@ -1,0 +1,42 @@
+[
+  {
+    "formattedAddress": "Parque Metropolitano Simón Bolívar, Av. Calle 53 y Av. Esmeralda #s/n, Bogotá, Cundinamarca, Colombia",
+    "location": {
+      "lat": 4.6586709,
+      "lng": -74.09396040000001
+    },
+    "name": "s/n Av. Calle 53 y Av. Esmeralda"
+  },
+  {
+    "formattedAddress": "Cra 45, Bogotá, Colombia",
+    "location": {
+      "lat": 4.6381938,
+      "lng": -74.08404639999998
+    },
+    "name": "Teusaquillo Bogotá"
+  },
+  {
+    "formattedAddress": "Av. Calle 26 #62-47, Bogotá, Colombia",
+    "location": {
+      "lat": 4.647623299999999,
+      "lng": -74.1016282
+    },
+    "name": "Av. Calle 26 Ciudad Salitre Oriental"
+  },
+  {
+    "formattedAddress": "Cl. 127c ##15-02, Bogotá, Colombia",
+    "location": {
+      "lat": 4.7102027,
+      "lng": -74.0424008
+    },
+    "name": "Cl. 127c Usaquén"
+  },
+  {
+    "formattedAddress": "Ak. 15 #124-30, Bogotá, Cundinamarca, Colombia",
+    "location": {
+      "lat": 4.702208499999999,
+      "lng": -74.04198969999999
+    },
+    "name": "Ak. 15 Multicentro"
+  }
+]

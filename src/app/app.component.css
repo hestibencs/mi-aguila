@@ -1,0 +1,99 @@
+.my-eagle-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
+
+.my-eagle-container .sidebar {
+}
+
+.my-eagle-container .sidebar .brand {
+  display: flex;
+  height: 50px;
+}
+
+.my-eagle-container .sidebar .brand img {
+  margin-left: 10px;
+  width: 120px;
+}
+
+.my-eagle-container .sidebar .profile {
+  padding: 0 0 30px;
+}
+
+.my-eagle-container .sidebar .profile .avatar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.my-eagle-container .sidebar .profile .avatar img {
+  width: 120px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.my-eagle-container .sidebar .profile .title {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  opacity: 0.5;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.my-eagle-container .sidebar .profile .description {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: center;
+  opacity: 0.4;
+  font-weight: bold;
+}
+
+.my-eagle-container .sidebar .separator {
+  height: 2px;
+  background-color: black;
+  width: 50%;
+  margin: 0 auto;
+  opacity: 0.1;
+}
+
+.my-eagle-container .sidebar .nav {
+  padding: 20px 0;
+  overflow: auto;
+  height: calc(100vh - 305px);
+}
+
+.my-eagle-container .sidebar .nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.my-eagle-container .sidebar .nav .nav-item:hover, .my-eagle-container .sidebar .nav .nav-item.active {
+  background-color: rgba(176, 196, 222, 0.2);
+  cursor: pointer;
+  border-left: lightseagreen 4px solid;
+  width: calc(100% - 4px);
+  font-weight: bold;
+}
+
+.my-eagle-container .sidebar .nav .nav-item:hover img, .my-eagle-container .sidebar .nav .nav-item.active img {
+  margin: 0 15px 0 21px;
+}
+
+.my-eagle-container .sidebar .nav .nav-item img {
+  width: 17px;
+  margin: 0 15px 0 25px;
+}
+
+.my-eagle-container .sidebar .nav .nav-item span {
+  opacity: 0.5;
+  font-size: 15px;
+  padding: 15px 0;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.my-eagle-container .content {
+  /*background-color: blue;*/
+}
