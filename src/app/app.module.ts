@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {DirectionCenterComponent} from './direction-center/direction-center.component';
 import {DirectionComponent} from './direction/direction.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import {ReactiveFormsModule} from "@angular/forms";
     }),
     AgmDirectionModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
