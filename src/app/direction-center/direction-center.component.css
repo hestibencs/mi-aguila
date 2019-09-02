@@ -26,7 +26,7 @@
   justify-content: space-around;
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 .direction-container .users .user-type {
@@ -38,7 +38,7 @@
   width: 30px;
   border-radius: 50%;
   margin: 0 auto;
-  border: 1px rgba(128,128,128, .4) solid;
+  border: 1px rgba(128, 128, 128, .4) solid;
 }
 
 .direction-container .users .user-type .text {
@@ -64,7 +64,7 @@
 .direction-container .origin {
   margin: 0 20px;
   padding: 15px 0;
-  border-bottom: 1px rgba(0,0,0,.1) solid;
+  border-bottom: 1px rgba(0, 0, 0, .1) solid;
   display: flex;
   justify-content: space-between;
 }
@@ -102,8 +102,8 @@
 }
 
 .direction-container .origin .origin-place.active {
-  border: 1px rgba(32,178,170, .7) solid;
-  color: rgba(32,178,170, .7);
+  border: 1px rgba(32, 178, 170, .7) solid;
+  color: rgba(32, 178, 170, .7);
   opacity: 1;
 }
 
@@ -118,7 +118,7 @@
 
 .direction-container .destination {
   padding: 15px 20px;
-  background-color: rgba(32,178,170,.2);
+  background-color: rgba(32, 178, 170, .2);
 }
 
 .direction-container .destination input {
@@ -130,14 +130,14 @@
   border: none;
   background-color: transparent;
   width: calc(100% - 30px);
-  border-bottom: 1px rgba(0,0,0,.2) solid;
+  border-bottom: 1px rgba(0, 0, 0, .2) solid;
 }
 
 .direction-container .destination input:focus {
   border: none;
   outline: none;
   outline-offset: unset;
-  border-bottom: 1px rgba(0,0,0,.2) solid;
+  border-bottom: 1px rgba(0, 0, 0, .2) solid;
 }
 
 .direction-container .places-destination {
@@ -182,4 +182,63 @@
 
 .direction-container .places-destination .place .name .description {
   font-weight: normal;
+}
+
+.direction-container .btn-mobile, .btn-mobile-view {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .direction-container {
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+  }
+
+  .direction-container .btn-mobile {
+    height: 59px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px rgba(0, 0, 0, .1) solid;
+  }
+
+  .direction-container .btn-mobile .btn, .btn-mobile-view .btn {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 196, 222);
+    opacity: .2;
+    cursor: pointer;
+  }
+
+  .direction-container .places-destination {
+    overflow: auto;
+    height: calc(100vh - 341px);
+  }
+
+  .btn-mobile-view {
+    display: block;
+    z-index: 999;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+  }
+
+  .btn-mobile-view .btn {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .direction-container {
+    left: 20px;
+  }
 }

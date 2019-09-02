@@ -6,11 +6,30 @@ import {catchError, debounceTime, map, startWith, switchMap} from 'rxjs/operator
 import {FormControl} from '@angular/forms';
 import {GeocodeService} from '../services/geocode.service';
 import {Place} from '../place';
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-direction-center',
   templateUrl: './direction-center.component.html',
-  styleUrls: ['./direction-center.component.css']
+  styleUrls: ['./direction-center.component.css'],
+  animations: [
+    trigger('flyInOut', [
+      state('in', style({transform: 'translateX(0)'})),
+      transition('void => *', [
+        style({transform: 'translateX(-100%)'}),
+        animate(500)
+      ]),
+      transition('* => void', [
+        animate(500, style({transform: 'translateX(100%)'}))
+      ])
+    ]),
+    trigger(
+      'blockInitialRenderAnimation',
+      [
+        transition('void => *', [])
+      ]
+    )
+  ]
 })
 export class DirectionCenterComponent implements OnInit {
 
@@ -20,6 +39,7 @@ export class DirectionCenterComponent implements OnInit {
   placesOrigin: Array<Place> = [];
   origin: Place;
   destination: Place;
+  isShown = true;
 
   constructor(
     private router: Router,
