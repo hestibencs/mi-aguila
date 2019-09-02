@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {Place} from '../place';
+import {LocationPlace} from '../place';
 
 @Component({
   selector: 'app-direction',
@@ -9,8 +9,8 @@ import {Place} from '../place';
 })
 export class DirectionComponent implements OnInit {
 
-  public origin: Place;
-  public destination: Place;
+  public origin: LocationPlace;
+  public destination: LocationPlace;
 
   constructor(
     private route: ActivatedRoute
@@ -32,7 +32,7 @@ export class DirectionComponent implements OnInit {
         lng: +destination[1]
       };
     });
-    console.log('test', 'DirectionComponent');
+
   }
 
 }

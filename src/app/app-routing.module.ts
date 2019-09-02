@@ -12,11 +12,12 @@ const routes: Routes = [
   },
   {
     path: 'direction',
-    component: DirectionCenterComponent
-  },
-  {
-    path: 'direction/:origin/:destination',
-    component: DirectionComponent
+    component: DirectionCenterComponent,
+    children: [
+      {
+        path: ':origin/:destination', component: DirectionComponent
+      }
+    ]
   }
 ];
 

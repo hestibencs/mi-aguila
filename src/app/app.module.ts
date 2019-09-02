@@ -8,6 +8,7 @@ import {AgmDirectionModule} from 'agm-direction';
 import {HttpClientModule} from '@angular/common/http';
 import {DirectionCenterComponent} from './direction-center/direction-center.component';
 import {DirectionComponent} from './direction/direction.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {DirectionComponent} from './direction/direction.component';
       apiKey: 'AIzaSyCFWm9t-nLARH92q1iPeGi2q7_GZIU0mY4'
     }),
     AgmDirectionModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

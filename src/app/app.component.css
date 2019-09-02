@@ -60,6 +60,8 @@
 
 .my-eagle-container .sidebar .nav {
   padding: 20px 0;
+  overflow: auto;
+  height: calc(100vh - 305px);
 }
 
 .my-eagle-container .sidebar .nav .nav-item {

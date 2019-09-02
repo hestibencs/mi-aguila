@@ -12,10 +12,10 @@
     </div>
     <div class="separator"></div>
     <div class="nav">
-      <div *ngFor="let item of ['', '', '', '', '', '', '']; let i = index;" [ngClass]="{'active': i === 0}"
+      <div *ngFor="let item of menu; let i = index;" [ngClass]="{'active': i === 0}"
            class="nav-item">
         <img alt="icon" src="../assets/imgs/favicon.png">
-        <span>Pedir Aguila</span>
+        <span>{{item}}</span>
       </div>
     </div>
   </div>

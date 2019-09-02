@@ -1,0 +1,26 @@
+[
+  {
+    "formattedAddress": "Cra. 56 ##19-84, Bogotá, Colombia",
+    "location": {
+      "lat": 4.637886,
+      "lng": -74.103794
+    },
+    "name": "Cra. 56 Puente Aranda"
+  },
+  {
+    "formattedAddress": "Ak. 15 #8090, Bogotá, Cundinamarca, Colombia",
+    "location": {
+      "lat": 4.667311,
+      "lng": -74.05651499999999
+    },
+    "name": "Ak. 15 El Lago"
+  },
+  {
+    "formattedAddress": "Aeropuerto El Dorado, Bogotá, Colombia",
+    "location": {
+      "lat": 4.6971956,
+      "lng": -74.14051860000001
+    },
+    "name": "Fontibón Bogotá"
+  }
+]
